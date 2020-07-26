@@ -1,0 +1,131 @@
+version: '3.7'
+services:
+  zapsi_database_postgres:
+    networks:
+      - zapsi
+    container_name: zapsi_database
+    image: 'petrjahoda/zapsi_database_postgres:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'zapsidb:/var/lib/postgresql/data'
+    ports:
+      - '5432:5432'
+    restart: always
+  system_service:
+    networks:
+      - zapsi
+    container_name: system_service
+    image: 'petrjahoda/system_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'system_service_log:/bin/log'
+      - 'system_service_config:/bin/config'        
+    depends_on:
+      - zapsi_database_postgres
+    restart: always
+  zapsi_demodata_service:
+    networks:
+      - zapsi
+    container_name: zapsi_demodata_service
+    image: 'petrjahoda/zapsi_demodata_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    depends_on:
+      - zapsi_database_postgres
+      - system_service
+    restart: always
+  state_service:
+    networks:
+      - zapsi
+    container_name: state_service
+    image: 'petrjahoda/state_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'state_service_log:/bin/log'
+      - 'state_service_config:/bin/config'
+    depends_on:
+      - zapsi_database_postgres
+      - system_service
+    restart: always
+  terminal_service:
+    networks:
+      - zapsi
+    container_name: terminal_service
+    image: 'petrjahoda/terminal_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'terminal_service_log:/bin/log'
+      - 'terminal_service_config:/bin/config'
+    depends_on:
+      - zapsi_database_postgres
+      - system_service
+    restart: always
+  alarm_service:
+    networks:
+      - zapsi
+    container_name: alarm_service
+    image: 'petrjahoda/alarm_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'alarm_service_log:/bin/log'
+      - 'alarm_service_config:/bin/config'
+    depends_on:
+      - zapsi_database_postgres
+      - system_service
+    restart: always
+  display_webservice:
+    networks:
+      - zapsi
+    container_name: display_webservice
+    image: 'petrjahoda/display_webservice:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 20m
+        max-file: '10'
+    volumes:
+      - 'display_webservice_log:/bin/log'
+      - 'display_webservice_config:/bin/config'
+    depends_on:
+      - zapsi_database_postgres
+      - system_service
+    ports:
+      - '81:81'  
+    restart: always
+volumes:
+  zapsidb: null
+  state_service_log: null
+  state_service_config: null
+  display_webservice_log: null
+  display_webservice_config: null
+  alarm_service_log: null
+  alarm_service_config: null
+  terminal_service_log: null
+  terminal_service_config: null
+  system_service_log: null
+  system_service_config: null
+networks:
+  zapsi: null
