@@ -21,7 +21,6 @@ Every part (every service) of system check for necessary database tables at star
 
 ### Database (PostgreSQL)
 * running on port 54321, user postgres, password Zps05.....
-* pgadmin on port 8080, user zapsi@zapsi.eu, password Zps05.....
 * Tuning database: https://pgtune.leopard.in.ua/#/
     * update config file located in `SHOW config_file;`, usually /var/lib/postgresql/data/postgresql.conf
     * default: DB version 12
@@ -57,7 +56,7 @@ Every part (every service) of system check for necessary database tables at star
 * Github: https://github.com/petrjahoda/system_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/system_service   
         
-### Zapsi Web Service
+### System Web Service
 * system user interface
 * Github:
 * DockerHub:
