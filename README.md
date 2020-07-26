@@ -1,6 +1,4 @@
 # System
-##Description
-Manufacturing system, written in GO.
 ## Installation guide
 ## Implementation guide
 ## Developer guide
