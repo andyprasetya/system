@@ -1,95 +1,95 @@
-version: '3.6'
+version: '3.8'
 services:
-  zapsidatabase:
+  database:
     networks:
-      - zapsi
-    container_name: zapsidatabase
-    image: 'petrjahoda/zapsidatabase:latest'
+      - system3
+    container_name: database
+    image: 'petrjahoda/database:latest'
     logging:
       driver: json-file
       options:
         max-size: 5m
         max-file: '10'
     volumes:
-      - 'zapsidb:/var/lib/mysql'
-      - 'zapsidblogs:/var/log/mysql'
+      - 'db:/var/lib/mysql'
+      - 'dblogs:/var/log/mysql'
     ports:
-      - '3306:3306'
+      - '5432:5432'
     restart: always
     environment: []
-  stateserver:
+  system_service:
     networks:
-      - zapsi
-    container_name: stateservercore
-    image: 'petrjahoda/stateservercore:latest'
+      - system3
+    container_name: system_service
+    image: 'petrjahoda/system_service:latest'
     logging:
       driver: json-file
       options:
-        max-size: 5m
+        max-size: 10m
         max-file: '10'
     depends_on:
-      - zapsidatabase
+      - database
     restart: always
-  terminalserver:
-    networks:
-      - zapsi
-    container_name: terminalservercore
-    image: 'petrjahoda/terminalservercore:latest'
-    logging:
-      driver: json-file
-      options:
-        max-size: 5m
-        max-file: '10'
-    depends_on:
-      - zapsidatabase
-    restart: always
-  zapsiserver:
-    networks:
-      - zapsi
-    container_name: zapsiservercore
-    image: 'petrjahoda/zapsiservercore:latest'
-    logging:
-      driver: json-file
-      options:
-        max-size: 5m
-        max-file: '10'
-    depends_on:
-      - zapsidatabase
-    restart: always
-  zapsiweb:
-    networks:
-      - zapsi
-    container_name: zapsiweb
-    image: 'petrjahoda/zapsiweb:latest'
-    logging:
-      driver: json-file
-      options:
-        max-size: 5m
-        max-file: '10'
-    ports:
-      - '80:80'
-    volumes:
-      - 'zapsiweb:/var'
-    restart: always
-  terminalweb:
-    networks:
-      - zapsi
-    container_name: terminalweb
-    image: 'petrjahoda/terminalweb:latest'
-    logging:
-      driver: json-file
-      options:
-        max-size: 5m
-        max-file: '10'
-    ports:
-      - '81:80'
-    volumes:
-      - 'terminalweb:/var'
-    restart: always    
+#  terminalserver:
+#    networks:
+#      - zapsi
+#    container_name: terminalservercore
+#    image: 'petrjahoda/terminalservercore:latest'
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: 5m
+#        max-file: '10'
+#    depends_on:
+#      - zapsidatabase
+#    restart: always
+#  zapsiserver:
+#    networks:
+#      - zapsi
+#    container_name: zapsiservercore
+#    image: 'petrjahoda/zapsiservercore:latest'
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: 5m
+#        max-file: '10'
+#    depends_on:
+#      - zapsidatabase
+#    restart: always
+#  zapsiweb:
+#    networks:
+#      - zapsi
+#    container_name: zapsiweb
+#    image: 'petrjahoda/zapsiweb:latest'
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: 5m
+#        max-file: '10'
+#    ports:
+#      - '80:80'
+#    volumes:
+#      - 'zapsiweb:/var'
+#    restart: always
+#  terminalweb:
+#    networks:
+#      - zapsi
+#    container_name: terminalweb
+#    image: 'petrjahoda/terminalweb:latest'
+#    logging:
+#      driver: json-file
+#      options:
+#        max-size: 5m
+#        max-file: '10'
+#    ports:
+#      - '81:80'
+#    volumes:
+#      - 'terminalweb:/var'
+#    restart: always
 volumes:
-  zapsidb: null
-  zapsidblogs: null
-  zapsiweb: null
-  terminalweb: null
+  db: null
+  dblogs: null
+#  zapsiweb: null
+#  terminalweb: null
 networks:
-  zapsi: null
+  system3: null

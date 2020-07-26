@@ -18,6 +18,7 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 
 ### Change
 - repo renamed to "system"
+- updated demo docker-compose.yml file 
 
 
 ## [2020.1.3.5] - 2020-03-05
