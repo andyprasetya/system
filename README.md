@@ -1,4 +1,4 @@
-# System
+# System3
 ## Installation guide
 ## Implementation guide
 ## Developer guide
@@ -12,7 +12,7 @@ By number of workplaces
 
 
 ## Description
-System is used for collecting data from factory machines and factory operators.<br>
+System3 is used for collecting data from factory machines and factory operators.<br>
 Everything is stored in (postgresql) database with web as user interface.<br>
 Additional software is used for processing data.<br>
 Every part (every service) of system check for necessary database tables at startup. Tables are created or updated if necessary.
