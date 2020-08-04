@@ -1,4 +1,4 @@
-# System3
+# the Great Manufacturing System (tGMS)
 ## Installation guide
 ## Implementation guide
 ## Developer guide
@@ -65,4 +65,4 @@ Every part (every service) of system check for necessary database tables at star
 * Github: Github: https://github.com/petrjahoda/display_webservice
 * DockerHub: https://cloud.docker.com/r/petrjahoda/display_webservice
     
-Petr Jahoda © 2020
+tGMS © 2020 Petr Jahoda
