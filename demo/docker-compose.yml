@@ -2,7 +2,7 @@ version: '3.8'
 services:
   database:
     networks:
-      - system3
+      - tgms
     container_name: database
     image: 'petrjahoda/database:latest'
     logging:
@@ -19,7 +19,7 @@ services:
     environment: []
   system_service:
     networks:
-      - system3
+      - tgms
     container_name: system_service
     image: 'petrjahoda/system_service:latest'
     logging:
@@ -30,66 +30,75 @@ services:
     depends_on:
       - database
     restart: always
-#  terminalserver:
-#    networks:
-#      - zapsi
-#    container_name: terminalservercore
-#    image: 'petrjahoda/terminalservercore:latest'
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: 5m
-#        max-file: '10'
-#    depends_on:
-#      - zapsidatabase
-#    restart: always
-#  zapsiserver:
-#    networks:
-#      - zapsi
-#    container_name: zapsiservercore
-#    image: 'petrjahoda/zapsiservercore:latest'
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: 5m
-#        max-file: '10'
-#    depends_on:
-#      - zapsidatabase
-#    restart: always
-#  zapsiweb:
-#    networks:
-#      - zapsi
-#    container_name: zapsiweb
-#    image: 'petrjahoda/zapsiweb:latest'
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: 5m
-#        max-file: '10'
-#    ports:
-#      - '80:80'
-#    volumes:
-#      - 'zapsiweb:/var'
-#    restart: always
-#  terminalweb:
-#    networks:
-#      - zapsi
-#    container_name: terminalweb
-#    image: 'petrjahoda/terminalweb:latest'
-#    logging:
-#      driver: json-file
-#      options:
-#        max-size: 5m
-#        max-file: '10'
-#    ports:
-#      - '81:80'
-#    volumes:
-#      - 'terminalweb:/var'
-#    restart: always
+  zapsi_service:
+    networks:
+      - tgms
+    container_name: zapsi_service
+    image: 'petrjahoda/zapsi_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    depends_on:
+      - database
+    restart: always
+  state_service:
+    networks:
+      - tgms
+    container_name: state_service
+    image: 'petrjahoda/state_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    depends_on:
+      - database
+    restart: always
+  terminal_service:
+    networks:
+      - tgms
+    container_name: terminal_service
+    image: 'petrjahoda/terminal_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    depends_on:
+      - database
+    restart: always
+  alarm_service:
+    networks:
+      - tgms
+    container_name: alarm_service
+    image: 'petrjahoda/alarm_service:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    depends_on:
+      - database
+    restart: always
+  display_webservice:
+    networks:
+      - tgms
+    container_name: display_webservice
+    image: 'petrjahoda/display_webservice:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    depends_on:
+      - database
+    restart: always
 volumes:
   db: null
   dblogs: null
 #  zapsiweb: null
 #  terminalweb: null
 networks:
-  system3: null
+  tgms: null
