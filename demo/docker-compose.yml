@@ -30,11 +30,11 @@ services:
     depends_on:
       - database
     restart: always
-  zapsi_service:
+  zapsi_demodata_service:
     networks:
       - tgms
-    container_name: zapsi_service
-    image: 'petrjahoda/zapsi_service:latest'
+    container_name: zapsi_demodata_service
+    image: 'petrjahoda/zapsi_demodata_service:latest'
     logging:
       driver: json-file
       options:
@@ -92,6 +92,8 @@ services:
       options:
         max-size: 10m
         max-file: '10'
+    ports:
+      - '81:81'
     depends_on:
       - database
     restart: always
