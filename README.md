@@ -12,7 +12,7 @@ By number of workplaces
 
 
 ## Description
-System3 is used for collecting data from factory machines and factory operators.<br>
+tGMS is used for collecting data from factory machines and factory operators.<br>
 Everything is stored in (postgresql) database with web as user interface.<br>
 Additional software is used for processing data.<br>
 Every part (every service) of system check for necessary database tables at startup. Tables are created or updated if necessary.
@@ -44,11 +44,11 @@ Every part (every service) of system check for necessary database tables at star
 * Github: https://github.com/petrjahoda/state_service
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/state_service
 ### Terminal Service
-* process raw data and generates workplace states in realtime)
+* process raw data and generates workplace states in realtime
 * Github: https://github.com/petrjahoda/terminal_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/terminal_service
 ### Alarm Service
-* process raw data and generates email alarms in realtime)
+* process raw data and generates email alarms in realtime
 * Github: https://github.com/petrjahoda/alarm_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/alarm_service
 ### System Service
@@ -65,4 +65,4 @@ Every part (every service) of system check for necessary database tables at star
 * Github: Github: https://github.com/petrjahoda/display_webservice
 * DockerHub: https://cloud.docker.com/r/petrjahoda/display_webservice
     
-tGMS © 2020 Petr Jahoda
+Copyright © 2020 Petr Jahoda
