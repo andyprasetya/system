@@ -17,7 +17,7 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 ## [2020.3.2.4] - 2020-08-04
 
 ### Change
-- system renamed to "the Great Manufacturing System", gTMS for short
+- system renamed to "the Great Manufacturing System", tGMS for short
 - updated docker-compose.yml files
 
 ## [2020.3.1.26] - 2020-07-26
