@@ -1,4 +1,4 @@
-# Zapsi coding rules
+# Coding rules
 ## Naming
 Software naming is lower case only with underscore.
 First name is the name of the software.
