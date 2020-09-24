@@ -23,22 +23,20 @@ Every part (every service) of system check for necessary database tables at star
 * running on port 54321, user postgres, password Zps05.....
 * Tuning database: https://pgtune.leopard.in.ua/#/
     * update config file located in `SHOW config_file;`, usually /var/lib/postgresql/data/postgresql.conf
-    * default: DB version 12
+    * default: DB version 13
     * default: OS Type Linux
     * default: DB Type Mixed type of applications
     * default: number of connections: 10 per 1 workplace (for example: 100 per 10 workplaces)
 * Github: https://github.com/petrjahoda/database
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/database
-
+### System Service
+* controls proper system behavior)
+* Github: https://github.com/petrjahoda/system_service
+* DockerHub: https://cloud.docker.com/r/petrjahoda/system_service   
 ### Zapsi Service
 * collects data from zapsi devices
 * Github: https://github.com/petrjahoda/zapsi_service
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/zapsi_service
-### Siemens Service
-* collects data from S7 devices
-### OPC Service
-* collects OPC data
-
 ### State Service
 * process raw data and generates workplace states in realtime
 * Github: https://github.com/petrjahoda/state_service
@@ -51,11 +49,6 @@ Every part (every service) of system check for necessary database tables at star
 * process raw data and generates email alarms in realtime
 * Github: https://github.com/petrjahoda/alarm_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/alarm_service
-### System Service
-* controls proper system behavior)
-* Github: https://github.com/petrjahoda/system_service
-* DockerHub: https://cloud.docker.com/r/petrjahoda/system_service   
-        
 ### System Web Service
 * system user interface
 * Github:
