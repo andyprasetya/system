@@ -1,4 +1,4 @@
-# the Great Manufacturing System (tGMS)
+# Manufacturing System
 ## Installation guide
 ## Implementation guide
 ## Developer guide
@@ -12,7 +12,7 @@ By number of workplaces
 
 
 ## Description
-tGMS is used for collecting data from factory machines and factory operators.<br>
+Manufacturing system is used for collecting data from factory machines and factory operators.<br>
 Everything is stored in (postgresql) database with web as user interface.<br>
 Additional software is used for processing data.<br>
 Every part (every service) of system check for necessary database tables at startup. Tables are created or updated if necessary.
@@ -65,4 +65,4 @@ Every part (every service) of system check for necessary database tables at star
 * Github: Github: https://github.com/petrjahoda/display_webservice
 * DockerHub: https://cloud.docker.com/r/petrjahoda/display_webservice
     
-Copyright © 2020 Petr Jahoda
+© 2020 Petr Jahoda
