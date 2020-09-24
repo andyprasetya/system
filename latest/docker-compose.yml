@@ -96,8 +96,5 @@ services:
     restart: always
 volumes:
   db: null
-#  dblogs: null
-#  zapsiweb: null
-#  terminalweb: null
 networks:
-  tgms: null
+  system: null
