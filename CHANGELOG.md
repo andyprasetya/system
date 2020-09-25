@@ -14,15 +14,20 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2020.3.3.25] - 2020-09-25
+
+### Changed
+- updated readme.md
+
 ## [2020.3.2.4] - 2020-08-04
 
-### Change
+### Changed
 - system renamed to "the Great Manufacturing System", tGMS for short
 - updated docker-compose.yml files
 
 ## [2020.3.1.26] - 2020-07-26
 
-### Change
+### Changed
 - repo renamed to "system"
 - updated demo docker-compose.yml file 
 

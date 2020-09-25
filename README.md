@@ -1,8 +1,21 @@
+[![developed_using](https://img.shields.io/badge/developed%20using-Jetbrains%20Goland-lightgrey)](https://www.jetbrains.com/go/)
+<br/>
+![GitHub](https://img.shields.io/github/license/petrjahoda/system)
+[![GitHub last commit](https://img.shields.io/github/last-commit/petrjahoda/system)](https://github.com/petrjahoda/system/commits/master)
+[![GitHub issues](https://img.shields.io/github/issues/petrjahoda/system)](https://github.com/petrjahoda/system/issues)
+<br/>
+![GitHub repo size](https://img.shields.io/github/repo-size/petrjahoda/state_service)
+<br/>
+[![database](https://img.shields.io/badge/database-PostgreSQL-red)](https://www.postgresql.org)
+[![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
+
 # Manufacturing System
-## Installation guide
+
+## Installation
+Install under docker runtime using [this dockerfile image](https://github.com/petrjahoda/system/tree/master/latest) with this command: ```docker-compose up -d```
+
 ## Implementation guide
-## Developer guide
-## User guide
+Proper implementation and settings can be found in each github repository (see below).
 
 ## Requirements
 By number of workplaces
@@ -15,46 +28,30 @@ By number of workplaces
 Manufacturing system is used for collecting data from factory machines and factory operators.<br>
 Everything is stored in (postgresql) database with web as user interface.<br>
 Additional software is used for processing data.<br>
-Every part (every service) of system check for necessary database tables at startup. Tables are created or updated if necessary.
-
 
 
 ### Database (PostgreSQL)
-* running on port 54321, user postgres, password Zps05.....
-* Tuning database: https://pgtune.leopard.in.ua/#/
-    * update config file located in `SHOW config_file;`, usually /var/lib/postgresql/data/postgresql.conf
-    * default: DB version 13
-    * default: OS Type Linux
-    * default: DB Type Mixed type of applications
-    * default: number of connections: 10 per 1 workplace (for example: 100 per 10 workplaces)
 * Github: https://github.com/petrjahoda/database
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/database
 ### System Service
-* controls proper system behavior)
 * Github: https://github.com/petrjahoda/system_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/system_service   
 ### Zapsi Service
-* collects data from zapsi devices
 * Github: https://github.com/petrjahoda/zapsi_service
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/zapsi_service
 ### State Service
-* process raw data and generates workplace states in realtime
 * Github: https://github.com/petrjahoda/state_service
 * DockerHub: https://hub.docker.com/repository/docker/petrjahoda/state_service
 ### Terminal Service
-* process raw data and generates workplace states in realtime
 * Github: https://github.com/petrjahoda/terminal_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/terminal_service
 ### Alarm Service
-* process raw data and generates email alarms in realtime
 * Github: https://github.com/petrjahoda/alarm_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/alarm_service
 ### System Web Service
-* system user interface
 * Github:
 * DockerHub:
 ### Display Web Service
-* web pages for displaying realtime data, for use with big LCD screens
 * Github: Github: https://github.com/petrjahoda/display_webservice
 * DockerHub: https://cloud.docker.com/r/petrjahoda/display_webservice
     
