@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e63e2097-eeca-4d1d-a3bd-b9e9df81b9d9" name="Default Changelist" comment="" />
+    <list default="true" id="e63e2097-eeca-4d1d-a3bd-b9e9df81b9d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/coding_rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/coding_rules.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="2762" />
+    <option name="totalTimeSeconds" value="2979" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -58,7 +61,8 @@
     <MESSAGE value="## [2020.3.2.4] - 2020-08-04&#10;&#10;### Change&#10;- system renamed to &quot;Manufacturing System&quot;&#10;- updated docker-compose.yml files" />
     <MESSAGE value="## [2020.3.3.24] - 2020-09-24&#10;&#10;### Change&#10;- system renamed to &quot;Manufacturing System&quot;&#10;- updated docker-compose.yml files" />
     <MESSAGE value="## [2020.3.3.25] - 2020-09-25&#10;&#10;### Changed&#10;- updated readme.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="## [2020.3.3.25] - 2020-09-25&#10;&#10;### Changed&#10;- updated readme.md" />
+    <MESSAGE value="## [2020.3.3.26] - 2020-09-26&#10;&#10;### Fixed&#10;- fixed proper networkig in docker-compose.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="## [2020.3.3.26] - 2020-09-26&#10;&#10;### Fixed&#10;- fixed proper networkig in docker-compose.yml" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
@@ -69,11 +73,11 @@
     </state>
     <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1634.1027@0.23.1634.1027" timestamp="1595782514228" />
     <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1601019850153" />
-    <state x="391" y="23" key="CommitChangelistDialog2" timestamp="1601020003234">
+    <state x="391" y="23" key="CommitChangelistDialog2" timestamp="1601109749938">
       <screen x="0" y="23" width="1635" height="1027" />
     </state>
     <state x="391" y="23" key="CommitChangelistDialog2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092053299" />
-    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1635.1027@0.23.1635.1027" timestamp="1601020003234" />
+    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1635.1027@0.23.1635.1027" timestamp="1601109749938" />
     <state x="690" y="440" key="Github.ShareDialog" timestamp="1595780050945">
       <screen x="0" y="23" width="1634" height="1027" />
     </state>
@@ -82,11 +86,11 @@
       <screen x="0" y="23" width="1634" height="1027" />
     </state>
     <state x="646" y="248" key="Github.UntrackedFilesDialog/0.23.1634.1027@0.23.1634.1027" timestamp="1595780056791" />
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601020004549">
+    <state x="417" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601109751207">
       <screen x="0" y="23" width="1635" height="1027" />
     </state>
     <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092054613" />
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1601020004549" />
+    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1601109751207" />
     <state x="100" y="123" width="1434" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596536698718">
       <screen x="0" y="23" width="1634" height="1027" />
     </state>

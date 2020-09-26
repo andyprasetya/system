@@ -9,10 +9,11 @@ Second name is the type.
 - zapsi_service
 - state_service
 - terminal_service
-- zapsi_webservice
+- display_webservice
 - terminal_webservice
 - lcd_webservice
-- zapsi_postgres_database
+- database
+- ...
 
 File naming is lower case one name only.
 
@@ -26,14 +27,12 @@ Variable naming is camelCase, reasonable name should be used. Use runningDevices
 ## General coding rules
 https://dave.cheney.net/practical-go/presentations/qcon-china.html#_package_design
 
-
-
 ## Philosophy
 Files should be maximal 1000 lines long, optimal below 500 lines.<br>
 Reduce communication with expensive things (like databases) to minimum.<br>
 Make code readable, it should read like an english book.<br>
 Comment are forbidden, use logging instead.
-Always use main.go as a starting point for every software. Use default go coding conventions. Handle errors first. Do not use if-else, use only if. Use switch instead of multiples if-else.
+Always use main.go as a starting point for every software. Use default go coding conventions. Handle errors first. Use switch instead of multiples if-else.
 Every procedure, method or functions starts with logging message and ends with logging messages with result and elapsed time information.
 
 
@@ -51,15 +50,15 @@ Commit after every change. Use these tags:
 
 ## Technologies
 
-Main language : Go with libraries: GORM, httprouter, amCharts, MetroUI
-
-Main database: PostgreSQL
-
-Runtime: Docker
-
-Git repository: github
-
-Licence: MIT
+Main language: Go<br>
+ORM: GORM<br>
+Http Router and Muxer: Httprouter<br>
+Main CSS library: MetroUI<br>
+Main Javascript Charting Library: AmCharts<br> 
+Main database: PostgreSQL<br>
+Runtime: Docker<br>
+Git repository: Github<br>
+Licence: MIT<br>
 
 ## Versioning
 
