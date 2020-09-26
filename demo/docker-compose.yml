@@ -2,7 +2,7 @@ version: '3.8'
 services:
   database:
     networks:
-      - tgms
+      - system
     container_name: database
     image: 'petrjahoda/database:latest'
     logging:
@@ -18,7 +18,7 @@ services:
     environment: []
   system_service:
     networks:
-      - tgms
+      - system
     container_name: system_service
     image: 'petrjahoda/system_service:latest'
     logging:
@@ -31,7 +31,7 @@ services:
     restart: always
   zapsi_demodata_service:
     networks:
-      - tgms
+      - system
     container_name: zapsi_demodata_service
     image: 'petrjahoda/zapsi_demodata_service:latest'
     logging:
@@ -44,7 +44,7 @@ services:
     restart: always
   state_service:
     networks:
-      - tgms
+      - system
     container_name: state_service
     image: 'petrjahoda/state_service:latest'
     logging:
@@ -57,7 +57,7 @@ services:
     restart: always
   terminal_service:
     networks:
-      - tgms
+      - system
     container_name: terminal_service
     image: 'petrjahoda/terminal_service:latest'
     logging:
@@ -70,7 +70,7 @@ services:
     restart: always
   alarm_service:
     networks:
-      - tgms
+      - system
     container_name: alarm_service
     image: 'petrjahoda/alarm_service:latest'
     logging:
@@ -83,7 +83,7 @@ services:
     restart: always
   display_webservice:
     networks:
-      - tgms
+      - system
     container_name: display_webservice
     image: 'petrjahoda/display_webservice:latest'
     logging:
