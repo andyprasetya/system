@@ -4,7 +4,7 @@
 [![GitHub last commit](https://img.shields.io/github/last-commit/petrjahoda/system)](https://github.com/petrjahoda/system/commits/master)
 [![GitHub issues](https://img.shields.io/github/issues/petrjahoda/system)](https://github.com/petrjahoda/system/issues)
 <br/>
-![GitHub repo size](https://img.shields.io/github/repo-size/petrjahoda/state_service)
+![GitHub repo size](https://img.shields.io/github/repo-size/petrjahoda/system)
 <br/>
 [![database](https://img.shields.io/badge/database-PostgreSQL-red)](https://www.postgresql.org)
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
