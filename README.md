@@ -1,5 +1,6 @@
 <img src="./logo.svg" alt="Size Limit CLI" width="100" align="right">
 
+
 [![developed_using](https://img.shields.io/badge/developed%20using-Jetbrains%20Goland-lightgrey)](https://www.jetbrains.com/go/)
 <br/>
 ![GitHub](https://img.shields.io/github/license/petrjahoda/system)
