@@ -10,7 +10,10 @@
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
 
 # Manufacturing System
-
+<p>
+<img src="./logo.svg" alt="Smiley face" style="float:right;width:42px;height:42px;">
+A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.
+</p>
 ## Installation
 Install under docker runtime using [this dockerfile image](https://github.com/petrjahoda/system/tree/master/latest) with this command: ```docker-compose up -d```
 

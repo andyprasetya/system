@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e63e2097-eeca-4d1d-a3bd-b9e9df81b9d9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/logo.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/coding_rules.md" beforeDir="false" afterPath="$PROJECT_DIR$/coding_rules.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="2979" />
+    <option name="totalTimeSeconds" value="3122" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -44,6 +45,9 @@
     <property name="settings.editor.selected.configurable" value="GitLabConfigurableProvider" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/latest" />
       <recent name="$PROJECT_DIR$/demo" />
@@ -73,11 +77,11 @@
     </state>
     <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1634.1027@0.23.1634.1027" timestamp="1595782514228" />
     <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1601019850153" />
-    <state x="391" y="23" key="CommitChangelistDialog2" timestamp="1601109749938">
+    <state x="391" y="23" key="CommitChangelistDialog2" timestamp="1601115334285">
       <screen x="0" y="23" width="1635" height="1027" />
     </state>
     <state x="391" y="23" key="CommitChangelistDialog2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092053299" />
-    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1635.1027@0.23.1635.1027" timestamp="1601109749938" />
+    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1635.1027@0.23.1635.1027" timestamp="1601115334285" />
     <state x="690" y="440" key="Github.ShareDialog" timestamp="1595780050945">
       <screen x="0" y="23" width="1634" height="1027" />
     </state>
@@ -86,11 +90,11 @@
       <screen x="0" y="23" width="1634" height="1027" />
     </state>
     <state x="646" y="248" key="Github.UntrackedFilesDialog/0.23.1634.1027@0.23.1634.1027" timestamp="1595780056791" />
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601109751207">
+    <state x="417" y="276" key="Vcs.Push.Dialog.v2" timestamp="1601115335740">
       <screen x="0" y="23" width="1635" height="1027" />
     </state>
     <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092054613" />
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1601109751207" />
+    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1601115335740" />
     <state x="100" y="123" width="1434" height="827" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1596536698718">
       <screen x="0" y="23" width="1634" height="1027" />
     </state>
