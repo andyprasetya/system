@@ -8,9 +8,8 @@
 <br/>
 [![database](https://img.shields.io/badge/database-PostgreSQL-red)](https://www.postgresql.org)
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
-<p align="right">
-  <img src="./logo.svg" alt="Size Limit CLI" width="100">
-</p>
+
+  <img src="./logo.svg" alt="Size Limit CLI" width="100" align="right">
 
 # Manufacturing System
 
