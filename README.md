@@ -1,3 +1,4 @@
+<img src="./logo.svg" alt="Size Limit CLI" width="100" align="right">
 [![developed_using](https://img.shields.io/badge/developed%20using-Jetbrains%20Goland-lightgrey)](https://www.jetbrains.com/go/)
 <br/>
 ![GitHub](https://img.shields.io/github/license/petrjahoda/system)
@@ -9,7 +10,6 @@
 [![database](https://img.shields.io/badge/database-PostgreSQL-red)](https://www.postgresql.org)
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
 
-  <img src="./logo.svg" alt="Size Limit CLI" width="100" align="right">
 
 # Manufacturing System
 
