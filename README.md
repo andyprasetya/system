@@ -10,7 +10,7 @@
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
 
 # Manufacturing System
-<p align="right">
+<p float="right">
   <img src="./logo.svg" alt="Size Limit CLI" width="100">
 </p>
 ## Installation
