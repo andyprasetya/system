@@ -8,11 +8,12 @@
 <br/>
 [![database](https://img.shields.io/badge/database-PostgreSQL-red)](https://www.postgresql.org)
 [![runtime](https://img.shields.io/badge/runtime-Docker-red)](https://www.docker.com)
-
-# Manufacturing System
-<p float="right">
+<p align="right">
   <img src="./logo.svg" alt="Size Limit CLI" width="100">
 </p>
+
+# Manufacturing System
+
 ## Installation
 Install under docker runtime using [this dockerfile image](https://github.com/petrjahoda/system/tree/master/latest) with this command: ```docker-compose up -d```
 
