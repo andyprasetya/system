@@ -16,6 +16,10 @@
 
 ## Installation
 Install under docker runtime using [this dockerfile image](https://github.com/petrjahoda/system/tree/master/latest) with this command: ```docker-compose up -d```
+### Demoversion
+Install under docker runtime using [this dockerfile image](https://github.com/petrjahoda/system/tree/master/demo) with this command: ```docker-compose up -d```<br>
+This will install zapsi_demodata_service that generates pseudorandom machine data, so one can see the system in work.
+
 
 ## Implementation guide
 Proper implementation and settings can be found in each github repository (see below).
@@ -57,5 +61,8 @@ Additional software is used for processing data.<br>
 ### Display Web Service
 * Github: Github: https://github.com/petrjahoda/display_webservice
 * DockerHub: https://cloud.docker.com/r/petrjahoda/display_webservice
+### Zapsi Demodata Service
+* Github: Github: https://github.com/petrjahoda/zapsi_demodata_service
+* DockerHub: https://cloud.docker.com/r/petrjahoda/zapsi_demodata_service
     
 © 2020 Petr Jahoda

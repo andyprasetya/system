@@ -14,6 +14,12 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2020.3.3.28] - 2020-09-28
+
+### Added
+- added guide for running demo version
+- added zapsi_demodata_service links
+
 ## [2020.3.3.26] - 2020-09-26
 
 ### Fixed
