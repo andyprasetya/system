@@ -30,6 +30,8 @@ By number of workplaces
 * up to 80 workplaces -> 8GB RAM, 8 logical processors, approx. 80GB HDD of data per year
 * etc.
 
+Example of CPU and Memory consumption when running 100 workplaces on 2CPU and 2GB RAM:
+![Example](example.gif)
 
 ## Description
 Manufacturing system is used for collecting data from factory machines and factory operators.<br>
