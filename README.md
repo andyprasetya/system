@@ -58,7 +58,7 @@ Additional software is used for processing data.<br>
 * Github: https://github.com/petrjahoda/alarm_service
 * DockerHub: https://cloud.docker.com/r/petrjahoda/alarm_service
 ### System Web Service
-* Github: **work-in-progress** https://github.com/petrjahoda/system_web_service
+* Github: **work-in-progress** https://github.com/petrjahoda/system_web_service_beta
 * DockerHub: **work-in-progress**
 ### Display Web Service
 * Github: Github: https://github.com/petrjahoda/display_webservice
