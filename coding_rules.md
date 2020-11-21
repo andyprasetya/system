@@ -53,8 +53,7 @@ Commit after every change. Use these tags:
 Main language: Go<br>
 ORM: GORM<br>
 Http Router and Muxer: Httprouter<br>
-Main CSS library: MetroUI<br>
-Main Javascript Charting Library: AmCharts<br> 
+Main Javascript Charting Library: D3<br> 
 Main database: PostgreSQL<br>
 Runtime: Docker<br>
 Git repository: Github<br>
