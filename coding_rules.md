@@ -31,8 +31,9 @@ https://dave.cheney.net/practical-go/presentations/qcon-china.html#_package_desi
 Files should be maximal 1000 lines long, optimal below 500 lines.<br>
 Reduce communication with expensive things (like databases) to minimum.<br>
 Make code readable, it should read like an english book.<br>
-Comment are forbidden, use logging instead.
-Always use main.go as a starting point for every software. Use default go coding conventions. Handle errors first. Use switch instead of multiples if-else.
+Comment are forbidden, use logging instead.<br>
+Always use main.go as a starting point for every software. Use default go coding conventions.<br>
+Handle errors first. Use switch instead of multiples if-else.<br>
 Every procedure, method or functions starts with logging message and ends with logging messages with result and elapsed time information.
 
 
