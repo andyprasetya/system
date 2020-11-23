@@ -38,6 +38,17 @@ Manufacturing system is used for collecting data from factory machines and facto
 Everything is stored in (postgresql) database with web as user interface.<br>
 Additional software is used for processing data.<br>
 
+## Roadmap
+- [ ] Version 1 work-in-progress
+- [ ] Version 2
+    - [ ] Postgres events
+- [ ] Version 3
+    - [ ] Siemens service
+    - [ ] OPC communication
+- [ ] Version 4
+    - [ ] iPhone app
+    - [ ] Android app
+
 
 ### Database (PostgreSQL)
 * Github: https://github.com/petrjahoda/database
