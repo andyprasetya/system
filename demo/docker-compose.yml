@@ -15,7 +15,7 @@ services:
     ports:
       - '5432:5432'
     restart: always
-    environment: []
+    environment: [ ]
   system_service:
     networks:
       - system
@@ -85,7 +85,22 @@ services:
     networks:
       - system
     container_name: display_webservice
-    image: 'petrjahoda/display_webservice_beta:latest'
+    image: 'petrjahoda/display_webservice:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    ports:
+      - '81:81'
+    depends_on:
+      - database
+    restart: always
+  system_webservice:
+    networks:
+      - system
+    container_name: system_webservice
+    image: 'petrjahoda/system_webservice_beta:latest'
     logging:
       driver: json-file
       options:
