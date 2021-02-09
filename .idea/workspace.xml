@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e63e2097-eeca-4d1d-a3bd-b9e9df81b9d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="4559" />
+    <option name="totalTimeSeconds" value="4633" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -68,31 +69,10 @@
     <MESSAGE value="## [2020.3.3.28] - 2020-09-28&#10;&#10;### Added&#10;- added guide for running demo version&#10;- added zapsi_demodata_service links" />
     <MESSAGE value="## [2020.4.2.16] - 2020-11-16&#10;&#10;### Changed&#10;- update link for system webservice (beta)" />
     <MESSAGE value="## [2020.4.2.21] - 2020-11-21&#10;&#10;### Changed&#10;- updated coding_rules.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="## [2020.4.2.21] - 2020-11-21&#10;&#10;### Changed&#10;- updated coding_rules.md" />
+    <MESSAGE value="## [2021.1.2.9] - 2021-02-09&#10;&#10;### Added&#10;- portainer&#10;- web service beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="## [2021.1.2.9] - 2021-02-09&#10;&#10;### Added&#10;- portainer&#10;- web service beta" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601019850153">
-      <screen x="0" y="23" width="1635" height="1027" />
-    </state>
-    <state x="417" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1601019850153" />
-    <state x="389" y="25" key="CommitChangelistDialog2" timestamp="1606146146003">
-      <screen x="0" y="25" width="1628" height="1025" />
-    </state>
-    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092053299" />
-    <state x="391" y="23" key="CommitChangelistDialog2/0.23.1635.1027@0.23.1635.1027" timestamp="1601379760067" />
-    <state x="389" y="25" key="CommitChangelistDialog2/0.25.1628.1025@0.25.1628.1025" timestamp="1606146146003" />
-    <state x="323" y="173" key="SettingsEditor" timestamp="1605526151032">
-      <screen x="0" y="25" width="1628" height="1025" />
-    </state>
-    <state x="323" y="173" key="SettingsEditor/0.25.1628.1025@0.25.1628.1025" timestamp="1605526151032" />
-    <state x="415" y="278" key="Vcs.Push.Dialog.v2" timestamp="1606146147723">
-      <screen x="0" y="25" width="1628" height="1025" />
-    </state>
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1634.1027@0.23.1634.1027" timestamp="1598092054613" />
-    <state x="417" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1601379761854" />
-    <state x="415" y="278" key="Vcs.Push.Dialog.v2/0.25.1628.1025@0.25.1628.1025" timestamp="1606146147723" />
   </component>
 </project>

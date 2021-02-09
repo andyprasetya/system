@@ -92,7 +92,7 @@ services:
         max-size: 10m
         max-file: '10'
     ports:
-      - '81:81'
+      - '80:80'
     depends_on:
       - database
     restart: always
