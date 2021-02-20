@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e63e2097-eeca-4d1d-a3bd-b9e9df81b9d9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="4633" />
+    <option name="totalTimeSeconds" value="4910" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>

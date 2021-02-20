@@ -14,6 +14,12 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2021.1.2.20] - 2021-02-20
+
+### Added
+- adminer
+- pgadmin
+
 ## [2021.1.2.9] - 2021-02-09
 
 ### Added

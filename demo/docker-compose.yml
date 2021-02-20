@@ -114,7 +114,7 @@ services:
   portainer:
     networks:
       - system
-    container_name: portainer
+    container_name: tools_portainer
     image: portainer/portainer-ce
     command: -H unix:///var/run/docker.sock
     restart: always
@@ -124,10 +124,32 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
+  pgadmin:
+    container_name: tools_pgadmin
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+       - pgadmin:/root/.pgadmin
+    ports:
+      - "5050:80"
+    networks:
+      - system
+    restart: always
+  adminer:
+    container_name: tools_adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - system
 
 volumes:
   portainer_data: null
   db: null
+  pgadmin: null
 
 networks:
   system: null
