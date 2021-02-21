@@ -121,6 +121,7 @@ services:
     ports:
       - 9000:9000
       - 8000:8000
+    command: --admin-password '$$2y$05$.sXrFuhMirxUKngp5LVZW.XwKCLQqTtKf.sgfANcu4MDPz5SyzbOq'
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainer_data:/data
@@ -128,8 +129,8 @@ services:
     container_name: tools_pgadmin
     image: dpage/pgadmin4
     environment:
-      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
-      PGADMIN_DEFAULT_PASSWORD: admin
+      PGADMIN_DEFAULT_EMAIL: petr@jahoda.cz
+      PGADMIN_DEFAULT_PASSWORD: pj79..
     volumes:
        - pgadmin:/root/.pgadmin
     ports:

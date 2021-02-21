@@ -10,7 +10,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="4910" />
+    <option name="totalTimeSeconds" value="4938" />
     <option name="gitIntegration" value="true" />
     <option name="naggedAbout" value="1" />
   </component>
@@ -69,7 +69,8 @@
     <MESSAGE value="## [2020.4.2.16] - 2020-11-16&#10;&#10;### Changed&#10;- update link for system webservice (beta)" />
     <MESSAGE value="## [2020.4.2.21] - 2020-11-21&#10;&#10;### Changed&#10;- updated coding_rules.md" />
     <MESSAGE value="## [2021.1.2.9] - 2021-02-09&#10;&#10;### Added&#10;- portainer&#10;- web service beta" />
-    <option name="LAST_COMMIT_MESSAGE" value="## [2021.1.2.9] - 2021-02-09&#10;&#10;### Added&#10;- portainer&#10;- web service beta" />
+    <MESSAGE value="## [2021.1.2.20] - 2021-02-20&#10;&#10;### Added&#10;- adminer&#10;- pgadmin" />
+    <option name="LAST_COMMIT_MESSAGE" value="## [2021.1.2.20] - 2021-02-20&#10;&#10;### Added&#10;- adminer&#10;- pgadmin" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
