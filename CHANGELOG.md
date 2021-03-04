@@ -14,6 +14,15 @@ adhere to [Semantic Versioning](http://semver.org/spec/v2.0.0.html) rules.
 * ```Fixed``` for any bug fixes.
 * ```Security``` in case of vulnerabilities.
 
+## [2021.1.3.4] - 2021-03-04
+
+### Removed
+- pgadmin from dockerfile (CPU usage)
+- portainer from dockerfile (CPU usage)
+
+## Added
+- system_webservice to dockerfile
+
 ## [2021.1.2.20] - 2021-02-20
 
 ### Added

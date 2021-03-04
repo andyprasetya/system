@@ -100,7 +100,7 @@ services:
     networks:
       - system
     container_name: system_webservice
-    image: 'petrjahoda/system_webservice_beta:latest'
+    image: 'petrjahoda/system_webservice:latest'
     logging:
       driver: json-file
       options:
@@ -110,33 +110,6 @@ services:
       - '80:80'
     depends_on:
       - database
-    restart: always
-  portainer:
-    networks:
-      - system
-    container_name: tools_portainer
-    image: portainer/portainer-ce
-    command: -H unix:///var/run/docker.sock
-    restart: always
-    ports:
-      - 9000:9000
-      - 8000:8000
-    command: --admin-password '$$2y$05$.sXrFuhMirxUKngp5LVZW.XwKCLQqTtKf.sgfANcu4MDPz5SyzbOq'
-    volumes:
-      - /var/run/docker.sock:/var/run/docker.sock
-      - portainer_data:/data
-  pgadmin:
-    container_name: tools_pgadmin
-    image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: petr@jahoda.cz
-      PGADMIN_DEFAULT_PASSWORD: pj79..
-    volumes:
-       - pgadmin:/root/.pgadmin
-    ports:
-      - "5050:80"
-    networks:
-      - system
     restart: always
   adminer:
     container_name: tools_adminer
@@ -148,9 +121,7 @@ services:
       - system
 
 volumes:
-  portainer_data: null
   db: null
-  pgadmin: null
 
 networks:
   system: null

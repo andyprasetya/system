@@ -94,6 +94,29 @@ services:
     depends_on:
       - database
     restart: always
+  adminer:
+    container_name: tools_adminer
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - system
+  system_webservice:
+    networks:
+      - system
+    container_name: system_webservice
+    image: 'petrjahoda/system_webservice:latest'
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: '10'
+    ports:
+      - '80:80'
+    depends_on:
+      - database
+    restart: always
 volumes:
   db: null
 networks:
